@@ -1,0 +1,97 @@
+html{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: poppins;
+	overflow-x: hidden;
+	background: linear-gradient(to right, #FF416C, #FF4B2B);
+}
+
+*,*:before,*:after{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+.wrapper{
+	width: 100%;
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+.wrapper:before,.wrapper:after,
+.row:before,.row:after{
+	display: table;
+	content: "";
+}
+
+.row:after,.wrapper:after{clear: both;}
+
+[class*=col-]{
+	width: 100%;
+	float: left;
+	min-height: 1px;
+}
+
+@media screen and (min-width: 960px){
+	.col-lg-4{width: 33.33%;}
+	.col-lg-5{width: 41.66%;}
+	.col-lg-6{width: 50%;}
+	.col-lg-7{width: 58.33%;}
+	.col-lg-8{width: 66.66%;}
+	.col-lg-12{width: 100%;}
+}
+
+.center{
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.bg-header{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+}
+
+
+.kotak{
+	padding: 30px;
+	margin: 10px;
+	background-color: white;
+	font-size: 25px;
+	color: #FF4B2B;
+	transition: .5s;
+}
+
+.input {
+	width: 100%;
+    padding: 5px;
+    border: 1px solid #FF4B2B;
+}
+
+.btn-daftar{
+	padding: 10px 40px;
+    border: 1px solid transparent;
+    color: #fff;
+    background: linear-gradient(to right, #FF416C, #FF4B2B);
+    border-radius: 10px;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.btn-daftar:hover{
+	background: white;
+	border: 1px solid #FF4B2B;
+	color: #FF4B2B;
+	transition: 1s;
+}
+
+
+
+
+
